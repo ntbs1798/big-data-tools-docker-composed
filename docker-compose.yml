@@ -1,0 +1,23 @@
+version: '1'
+services:
+  spark-hadoop-kafka:
+    image: ntbs1798/spark-hadoop-hive-kafka-sc:v1-release
+    container_name: bigdata-tools
+    restart: always
+    ports:
+    - "22:22"
+    - "9000:9000"
+    - "8088:8088"
+    - "9870:9870"
+    - "10000:10000"
+    - "9083:9083"
+    - "10500:10500"
+    - "9092:9092"
+    tty: true
+    networks:
+      - bigdata-network
+    volumes:
+      - ./python_code:/python_code
+networks:
+  bigdata-network:
+    name : bigdata-network
