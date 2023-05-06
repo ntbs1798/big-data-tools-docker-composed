@@ -1,5 +1,6 @@
 # BIG DATA WITH DOCKER-COMPOSE AND END TO END DEMO
-
+---
+## Watch the video Demo [Here](https://www.youtube.com/watch?v=8Y1ThOduNaM)
 ---
 
 ### Tech stack:
@@ -56,10 +57,6 @@
 ![DEMO!](demo.png)
 
 ### Step to run the demo:
-
----
-
-#### You can watch the demo [here](https://youtube.com)
 
 ---
 
