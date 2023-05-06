@@ -1,4 +1,14 @@
 # BIG DATA WITH DOCKER-COMPOSE AND END TO END DEMO
+---
+## Watch the video Demo [Here](https://www.youtube.com/watch?v=8Y1ThOduNaM)
+---
+
+### Tech stack:
+
+- Hadoop version: 3.2.4
+- Hive version: 3.1.3
+- Spark version: 3.3.2
+- Kafka version: 3.3.2
 
 ---
 
@@ -47,10 +57,6 @@
 ![DEMO!](demo.png)
 
 ### Step to run the demo:
-
----
-
-#### You can watch the demo [here](https://youtube.com)
 
 ---
 
