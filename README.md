@@ -1,7 +1,12 @@
 # BIG DATA WITH DOCKER-COMPOSE AND END TO END DEMO
 
 ---
-
+### Tech stack:
+- Hadoop version: 3.2.4
+- Hive version: 3.1.3
+- Spark version: 3.3.2
+- Kafka version: 3.3.2
+---
 ## BUILDING BIG DATA TOOLS FROM DOCKER IMAGE
 
 - To get start, you can take a few minutes to visit to my project of building and set up big-data tools from scratch with docker image to know more about what I did with the docker image via this [repo](https://github.com/ntbs1798/big-data-tools-docker-image).
