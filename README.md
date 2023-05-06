@@ -38,6 +38,10 @@
 
 ### Architecture:
 
+- This demo is following the 2-tier architecture of dataware house where data source are ingested to datalake(staging area) and then transformed and loaded to data warehouse
+
+![ARCHITECTURE!](2-tier-architecture.png)
+
 - The image below describe full etl process (from kafka raw source to final structure data warehouse)
 
 ![DEMO!](demo.png)
