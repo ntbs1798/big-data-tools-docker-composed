@@ -30,13 +30,12 @@ if __name__ == "__main__":
     ])
     
     # Handling raw data with schema
-    rawDf=spark.read.parquet("hdfs://localhost:9000/datalake2/staging")
+    rawDf=spark.read.parquet("hdfs://localhost:9000/datalake/staging")
     df=rawDf.selectExpr("CAST(value AS STRING)")
     valueWithSchema=df.select(from_json(col("value"), schema=schema).alias("sangsan17"))
     allValue = valueWithSchema.select("sangsan17.*")
-    # df1= spark.sql("select * from result rs JOIN (select Min(`Selling Price`) as cheapest from result where `Brand Name` = 'APPLE') appleView ON rs.`Selling Price` = appleView.cheapest UNION ALL select * from result2 rs2 JOIN (select Min(`Selling Price`) as cheapest from result2 where `Brand Name` = 'SAMSUNG') samsungView ON rs2.`Selling Price` = samsungView.cheapest UNION ALL select * from result2 rs3 JOIN (select Min(`Selling Price`) as cheapest from result2 where `Brand Name` = 'FOSSIL') fossilView ON rs3.`Selling Price` = fossilView.cheapest")
+    # df1= spark.sql("select * from result rs JOIN (select Min(`Selling Price`) as cheapest from result where `Brand Name` = 'APPLE') appleView ON rs.`Selling Price` = appleView.cheapest UNION ALL select * from result rs2 JOIN (select Min(`Selling Price`) as cheapest from result where `Brand Name` = 'SAMSUNG') samsungView ON rs2.`Selling Price` = samsungView.cheapest UNION ALL select * from result rs3 JOIN (select Min(`Selling Price`) as cheapest from result where `Brand Name` = 'FOSSIL') fossilView ON rs3.`Selling Price` = fossilView.cheapest")
     #df=spark.sql("select `Brand Name`,`Model Name`,`Display`,Min(`Selling Price`) cheapest from staging group by `Brand Name`,`Model Name`,`Display` order by `Brand Name`, cheapest")
     
     # Write result to hive     
     allValue.write.format("hive").mode("append").saveAsTable("result")
-
