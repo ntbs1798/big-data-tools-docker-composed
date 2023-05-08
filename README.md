@@ -93,7 +93,7 @@ This step is important as it export the port for environment to run softwares.
 #innitialize schema for hive
 ~/ schematool -initSchema -dbType derby
 #We are now ready to enter the Hive shell and create the database for holding data. Next, we need to start the Hive Metastore server with the following command.
-~/ hive --services metastore
+~/ hive --service metastore
 ```
 
 #### Step 3: Running zookeeper and kafka server
