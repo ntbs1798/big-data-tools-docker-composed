@@ -73,7 +73,7 @@ export PATH=/PATH:/SCALA_HOME/bin
 export PATH=/PATH:/SPARK_HOME/bin:/SPARK_HOME/sbin
 ```
 
-After edit the file, just save it and run the command: "~/ source .bashrc"
+After edit the file, just save it and run the command: "~/ source .bashrc".
 This step is important as it export the port for environment to run softwares.
 
 - Ok, env is setted up, let's run our softwares
