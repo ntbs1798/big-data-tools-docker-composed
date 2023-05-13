@@ -67,10 +67,10 @@
 - Next, you have to edit the .bashrc file with command: "~/ vi .bashrc" and export these ports:
 
 ```bash
-export PATH=/PATH:/HIVE_HOME/bin
-export PATH=/PATH:/SBT_HOME/bin
-export PATH=/PATH:/SCALA_HOME/bin
-export PATH=/PATH:/SPARK_HOME/bin:/SPARK_HOME/sbin
+export PATH=$PATH:$HIVE_HOME/bin
+export PATH=$PATH:$SBT_HOME/bin
+export PATH=$PATH:$SCALA_HOME/bin
+export PATH=$PATH:$SPARK_HOME/bin:/SPARK_HOME/sbin
 ```
 
 After edit the file, just save it and run the command: "~/ source .bashrc".
